@@ -258,7 +258,7 @@ function loadrecommended(){
                     data:{uid:uid},
                     success:function(recommend1){
                         recommend=JSON.parse(recommend1);
-                        flag4=false;
+                        flag6=false;
                         let i = 0;
                         for (i = 0; i < recommend.length; i++) {
                             var div = document.createElement('div');

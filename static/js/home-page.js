@@ -32,6 +32,9 @@ $(document).ready(function() {
         stagePadding: 30,
         loop: true,
         autoHeight: true,
+        autoplay:true,
+        autoplayTimeout:2500,
+        autoplayHoverPause:true,
         responsive: {
             0: {
                 items: 1

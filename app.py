@@ -7,9 +7,21 @@ import pyrebase
 from flask import Flask, render_template, app, request, session, redirect, json, jsonify
 from collections import OrderedDict
 import pandas as pd
-from scipy.sparse import csr_matrix
-from sklearn.neighbors import NearestNeighbors
-print("X")
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+try:
+    from scipy.sparse import csr_matrix
+    from sklearn.neighbors import NearestNeighbors
+except:
+    install('scipy')
+    install('sklearn')
+    from scipy.sparse import csr_matrix
+    from sklearn.neighbors import NearestNeighbors
+
 
 app = Flask(__name__)
 app.secret_key = "super secret key"
@@ -133,7 +145,6 @@ def load_myplaylist(uid):
             myplaylist.append(ref.child(s).get())
         return myplaylist
     except:
-        myplaylist.append({'Title': 'Empty Playlist'})
         return myplaylist
 
 
@@ -403,6 +414,7 @@ def recommend():
         uid = request.form['uid']
 
     rec_songs = []
+    rec_list=[]
     songs = dict(ref.get())
 
     # ----------------------Recommending based on user history-----------------
