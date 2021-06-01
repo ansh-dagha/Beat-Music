@@ -147,7 +147,7 @@ function searchsong(){
                                 '<p class="songinfo">' + search[i]['Artist'] + '-' + search[i]['Album'] + '</p>' +
                                 '</li>' +
                                 '<li>' +
-                                '<div class="dropdown dropleft song_options" style="right: -80px;">' +
+                                '<div class="dropdown dropleft song_options search_options">' +
                                 '<button class="btn more_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
                                 '<i class="fa fa-ellipsis-v" aria-hidden="true"></i>' +
                                 '</button>' +

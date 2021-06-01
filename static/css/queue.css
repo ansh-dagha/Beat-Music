@@ -101,6 +101,10 @@
     z-index: 10001;
 }
 
+.search_options{
+    right: -80px;
+}
+
 ul.line>li {
     float: left;
     margin: 0 10px;
@@ -247,6 +251,9 @@ ul.line>li {
         margin-right: 0;
         right: 0;
     }
+    .search_options{
+        right: 0px;
+    }
     .nopad{
         width: 80%;
     }
@@ -286,5 +293,8 @@ ul.line>li {
         height: 33vh;
         margin-top: 15px;
     }
-
+    .search-cont{
+        height: 80vh;
+    }
+    
 }
