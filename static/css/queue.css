@@ -24,7 +24,7 @@
 
 #queue_content {
     background-image: url('../images/BackgroundBlack.jpg');
-    height: 580px;
+    height: 90vh;
     color: white;
 }
 
@@ -79,13 +79,9 @@
 }
 
 .queue-cont {
-    height: 495px;
+    height: 75vh;
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-.queuesong {
-    z-index: 3;
 }
 
 .songname {
@@ -102,6 +98,7 @@
 .song_options {
     margin-right: -40px;
     right: -40px;
+    z-index: 10001;
 }
 
 ul.line>li {
@@ -169,6 +166,10 @@ ul.line>li {
     border-color: rgb(0, 255, 255);
 }
 
+.modal_img_div{
+    text-align: center;
+}
+
 
 /* width */
 
@@ -206,6 +207,11 @@ ul.line>li {
         width: 280px;
         height: 200px;
     }
+    .cover{
+        margin-left: 0;
+        width: 200px;
+        height: 200px;
+    }
     .modal_img_div{
         text-align: center;
     }
@@ -215,7 +221,8 @@ ul.line>li {
     #popularqueue,
     #myplaylistqueue,
     #recommendqueue,
-    #playqueue{
+    #playqueue, 
+    #queue{
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
@@ -223,6 +230,7 @@ ul.line>li {
     .playbtn{
         margin-left: 5px;
     }
+    
     .pad{
         padding-left: 20px;
         text-align: left;
@@ -247,10 +255,36 @@ ul.line>li {
         overflow-y: hidden !important;
     }
     .queue-cont{
-        height: 365px;
+        height: 52vh;
     }
     #queue_content{
-        height: auto;
+        height: 92vh;
+    }
+    #nowplaying{
+        font-size: 30px;
+    }
+    .head{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    #wordqueue{
+        display: none;
+    }
+    .queuepad{
+        padding-left: 15px;
+        margin-left: -5px;
+        margin-right: -10px;
+
+    }
+    .queuedrop{
+        margin-right: -7px;
+    }
+    #playnav{
+        padding-left: 10px !important;
+    }
+    #loadqueue{
+        height: 33vh;
+        margin-top: 15px;
     }
 
 }

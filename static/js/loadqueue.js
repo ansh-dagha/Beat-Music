@@ -12,16 +12,16 @@ function loadqueue(All_song) {
     for (i = 0; i < queue.length; i++) {
         var div = document.createElement('div');
         div.innerHTML = '<div class="col-1.5">' +
-            '<img src="https://picsum.photos/640/480?pic=5" class="songcov" onclick="'+'playrequest_queue(' + i.toString() + ')"/>' +
+            '<img src="https://firebasestorage.googleapis.com/v0/b/music-player-3dac7.appspot.com/o/Images%2FQueue_song.jpg?alt=media&token=6f13a9ef-c16f-454b-926f-7cc6c500111c" class="songcov" onclick="'+'playrequest_queue(' + i.toString() + ')"/>' +
             '</div>' +
             '<div class="col-xl-10 col-lg-10 col-sm-10 nopad">' +
             '<ul class="navbar nav ml-auto" id="playnav">' +
             '<li onclick="'+'playrequest_queue(' + i.toString() + ')">' +
             '<p class="songname">' + queue[i]['Title'] + '</p>' +
-            '<p class="songinfo">' + queue[i]['Artist'] + '-' + queue[i]['Album'] + '</p>' +
+            '<p class="songinfo">' + queue[i]['Artist'] + ' - ' + queue[i]['Album'] + '</p>' +
             '</li>' +
             '<li>' +
-            '<div class="dropdown dropleft song_options">' +
+            '<div class="dropdown dropleft song_options queuedrop">' +
             '<button class="btn more_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
             '<i class="fa fa-ellipsis-v" aria-hidden="true"></i>' +
             '</button>' +
@@ -33,7 +33,7 @@ function loadqueue(All_song) {
             '</li>' +
             '</ul>' +
             '</div>';
-        div.setAttribute('class', 'row pad');
+        div.setAttribute('class', 'row pad queuepad');
         div.setAttribute('id', 'Q'+queue[i]['ID']);
         // div.setAttribute('onclick', 'playrequest_queue(' + i.toString() + ')');
         document.getElementById("loadqueue").appendChild(div);
@@ -51,16 +51,16 @@ function addtoqueuemodal(song) {
     let i=queue.length-1
     var div = document.createElement('div');
     div.innerHTML = '<div class="col-1.5">' +
-        '<img src="https://picsum.photos/640/480?pic=5" class="songcov" onclick="'+'playrequest_queue(' + i.toString() + ')"/>' +
+        '<img src="https://firebasestorage.googleapis.com/v0/b/music-player-3dac7.appspot.com/o/Images%2FQueue_song.jpg?alt=media&token=6f13a9ef-c16f-454b-926f-7cc6c500111c" class="songcov" onclick="'+'playrequest_queue(' + i.toString() + ')"/>' +
         '</div>' +
         '<div class="col-xl-10 col-lg-10 col-sm-10 nopad">' +
         '<ul class="navbar nav ml-auto" id="playnav">' +
         '<li onclick="'+'playrequest_queue(' + i.toString() + ')">' +
         '<p class="songname">' + song['Title'] + '</p>' +
-        '<p class="songinfo">' + song['Artist'] + '-' + song['Album'] + '</p>' +
+        '<p class="songinfo">' + song['Artist'] + ' - ' + song['Album'] + '</p>' +
         '</li>' +
         '<li>' +
-        '<div class="dropdown dropleft song_options">' +
+        '<div class="dropdown dropleft song_options queuedrop">' +
         '<button class="btn more_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
         '<i class="fa fa-ellipsis-v" aria-hidden="true"></i>' +
         '</button>' +
@@ -72,7 +72,7 @@ function addtoqueuemodal(song) {
         '</li>' +
         '</ul>' +
         '</div>';
-    div.setAttribute('class', 'row pad');
+    div.setAttribute('class', 'row pad queuepad');
     div.setAttribute('id','Q'+song['ID']);
     // div.setAttribute('onclick', 'playrequest_queue(' + i.toString() + ')');
     document.getElementById("loadqueue").appendChild(div);
@@ -92,7 +92,7 @@ function load_popular_on_pageload(){
                         for (i = 0; i < trending.length; i++) {
                             var div = document.createElement('div');
                             div.innerHTML = '<div class="col-1.5">' +
-                                '<img src="https://picsum.photos/640/480?pic=5" class="songcov" onclick="'+'playrequest_trending(' + i.toString() + ')"/>' +
+                                '<img src="https://firebasestorage.googleapis.com/v0/b/music-player-3dac7.appspot.com/o/Images%2FTrending_song.jpg?alt=media&token=85d2776b-0978-428c-8b05-bcbdc726b456" class="songcov" onclick="'+'playrequest_trending(' + i.toString() + ')"/>' +
                                 '</div>' +
                                 '<div class="col-xl-10 col-lg-10 col-sm-10 nopad">' +
                                 '<ul class="navbar nav ml-auto" id="playnav">' +
@@ -105,7 +105,7 @@ function load_popular_on_pageload(){
                                 '<button class="btn more_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
                                 '<i class="fa fa-ellipsis-v" aria-hidden="true"></i>' +
                                 '</button>' +
-                                '<div class="dropdown-menu queuesong" aria-labelledby="dropdownMenuButton">' +
+                                '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">' +
                                 '<label class="dropdown-item" onclick="addtoplaylist(' + "'"+ uid +"'" + ',' + i.toString() + ',\'' + 'trending' + '\')">Add to Playlist</label>'+
                                 '<label class="dropdown-item" onclick="addtoqueue(' + "'"+ uid +"'" + ',' + i.toString() + ',\'' + 'trending' + '\')">Add to Queue</label>' +
                                 '</div>' +
@@ -184,7 +184,7 @@ function load_my_playlist_on_pageload(){
                         for (i = 0; i < myplaylist.length; i++) {
                             var div = document.createElement('div');
                             div.innerHTML = '<div class="col-1.5" onclick="'+'playrequest_myplaylist(' + i.toString() + ')">' +
-                                '<img src="https://picsum.photos/640/480?pic=5" class="songcov" onclick="'+'playrequest_myplaylist(' + i.toString() + ')"/>' +
+                                '<img src="https://firebasestorage.googleapis.com/v0/b/music-player-3dac7.appspot.com/o/Images%2FMyPlaylist_song.jpg?alt=media&token=0c99c5be-d6ac-4e63-9820-d767b317c59d" class="songcov" onclick="'+'playrequest_myplaylist(' + i.toString() + ')"/>' +
                                 '</div>' +
                                 '<div class="col-xl-10 col-lg-10 col-sm-10 nopad">' +
                                 '<ul class="navbar nav ml-auto" id="playnav">' +
@@ -221,7 +221,7 @@ function addtomyplaylistmodal(song){
     let i=myplaylist.length-1
     var div = document.createElement('div');
     div.innerHTML = '<div class="col-1.5">' +
-        '<img src="https://picsum.photos/640/480?pic=5" class="songcov" onclick="'+'playrequest_myplaylist(' + i.toString() + ')"/>' +
+        '<img src="https://firebasestorage.googleapis.com/v0/b/music-player-3dac7.appspot.com/o/Images%2FMyPlaylist_song.jpg?alt=media&token=0c99c5be-d6ac-4e63-9820-d767b317c59d" class="songcov" onclick="'+'playrequest_myplaylist(' + i.toString() + ')"/>' +
         '</div>' +
         '<div class="col-xl-10 col-lg-10 col-sm-10 nopad">' +
         '<ul class="navbar nav ml-auto" id="playnav">' +
@@ -263,7 +263,7 @@ function loadrecommended(){
                         for (i = 0; i < recommend.length; i++) {
                             var div = document.createElement('div');
                             div.innerHTML = '<div class="col-1.5">' +
-                                '<img src="https://picsum.photos/640/480?pic=5" class="songcov" onclick="'+'playrequest_recommend(' + i.toString() + ')"/>' +
+                                '<img src="https://firebasestorage.googleapis.com/v0/b/music-player-3dac7.appspot.com/o/Images%2FRecommended_song.jpg?alt=media&token=b92e0207-d5e3-40c5-9994-21ac6402733c" class="songcov" onclick="'+'playrequest_recommend(' + i.toString() + ')"/>' +
                                 '</div>' +
                                 '<div class="col-xl-10 col-lg-10 col-sm-10 nopad">' +
                                 '<ul class="navbar nav ml-auto" id="playnav">' +

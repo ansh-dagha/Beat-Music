@@ -32,6 +32,8 @@ if (width <= 768 ){
                     +    '</div>';
 
     mpdiv.setAttribute('id',"mobile_player_nav");
+    mpdiv.setAttribute('data-toggle', 'modal');
+    mpdiv.setAttribute('data-target', '#queue');
 }
 
 
@@ -89,9 +91,9 @@ var ifplay = false;
 // function load the track
 function load_track(index_no) {
 
-    document.getElementById("nowplayingalbum").innerHTML=All_song[index_no]['Album'];
+    //document.getElementById("nowplayingalbum").innerHTML=All_song[index_no]['Album'];
     document.getElementById("nowplayingtitle").innerHTML=All_song[index_no]['Title'];
-    document.getElementById("nowplayinginfo").innerHTML=All_song[index_no]['Artist']+'-'+All_song[index_no]['Album'];
+    document.getElementById("nowplayinginfo").innerHTML=All_song[index_no]['Artist']+' - '+All_song[index_no]['Album'];
     clearInterval(timer);
     reset_slider();
 

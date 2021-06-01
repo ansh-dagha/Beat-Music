@@ -3,6 +3,7 @@
     font-family: 'Open Sans', sans-serif;
     padding: 0 !important;
     padding-top: 10px !important;
+    z-index: 10000;
 }
 
 .player button {
@@ -53,7 +54,7 @@
     margin: 0 auto;
     margin-top: -5px;
     position: absolute;
-    z-index: 3;
+    z-index: 10002;
 }
 
 .middle button {
@@ -210,6 +211,7 @@
         cursor: pointer;
         transition: all ease-in-out 0.05s;
         margin-bottom: 12px;
+        z-index: 20000;
         }
 
     #mobile_player_nav input[type="range"]::-webkit-slider-runnable-track {
