@@ -28,16 +28,16 @@ app.secret_key = "super secret key"
 
 cred = credentials.Certificate('serviceAccount.json')
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://music-player-3dac7-default-rtdb.firebaseio.com'
+    'databaseURL': ' '
 })
 
 config = {
-    "apiKey": "AIzaSyCqK_WbCz4sM-cxqVgAZWARuNpSel7RaTs",
-    "authDomain": "music-player-3dac7.firebaseapp.com",
-    "projectId": "music-player-3dac7",
-    "storageBucket": "music-player-3dac7.appspot.com",
-    "messagingSenderId": "963378596642",
-    "databaseURL": "https://music-player-3dac7-default-rtdb.firebaseio.com",
+    "apiKey": " ",
+    "authDomain": " ",
+    "projectId": " ",
+    "storageBucket": " ",
+    "messagingSenderId": " ",
+    "databaseURL": " ",
     "serviceAccount": "serviceAccount.json"
 }
 
