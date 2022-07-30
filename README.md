@@ -8,8 +8,8 @@
 [![](https://img.shields.io/static/v1?label=&message=CSS&color=grey&style=for-the-badge&logo=CSS3)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![](https://img.shields.io/static/v1?label=&message=JavaScript&color=grey&style=for-the-badge&logo=JavaScript)](https://www.javascript.com/)
 [![](https://img.shields.io/static/v1?label=&message=Bootstrap&color=grey&style=for-the-badge&logo=Bootstrap)](https://www.javascript.com/)
-[![](https://img.shields.io/static/v1?label=&message=Flask&color=grey&style=for-the-badge&logo=flask)](https://www.python.org)
-[![](https://img.shields.io/static/v1?label=&message=Firebase&color=grey&style=for-the-badge&logo=Firebase)](https://www.javascript.com/)
+[![](https://img.shields.io/static/v1?label=&message=Flask&color=grey&style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
+[![](https://img.shields.io/static/v1?label=&message=Firebase&color=grey&style=for-the-badge&logo=Firebase)](https://firebase.google.com)
 </div><br/>
 
 
