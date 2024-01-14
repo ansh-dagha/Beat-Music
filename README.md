@@ -18,10 +18,7 @@
 
 <p align="justify">Beat Music is the one-stop music app for the latest to the greatest songs that you love. Play your favourite music online for free. Enjoy Hindi, English, Bollywood, Romance, Old songs and much more. Add your favorite songs and manage your personal playlist and tracks with the help of our online music app.</p>
 
-<p align="justify">It is a web Application where users can browse through a variety of options available and listen to their favourite music. Our system aims to improve user experience by providing users with various playlists containing suggestions about relevant music based on the user’s streaming history as well as the most popular songs that may be of their interest.</p>
-
-Demo: [Beat-Music](http://beat-muzic.herokuapp.com/)<br/>
-*(hosted on Heroku)* <br/><br/>
+<p align="justify">It is a web Application where users can browse through a variety of options available and listen to their favourite music. Our system aims to improve user experience by providing users with various playlists containing suggestions about relevant music based on the user’s streaming history as well as the most popular songs that may be of their interest.</p><br/>
 
 
 
