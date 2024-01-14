@@ -47,7 +47,7 @@ Users are provided accurate recommendations based on content-based and collabora
 * **Personal Playlist:** <br/>
 Users can create a playlist to keep track of their favourite songs. Songs can be added and removed as per user’s choice.<br/><br/>
 
-*For detailed description, please refer to [Project Report](https://drive.google.com/file/d/1BOljQH3an-HAHsVy-KAy33sVT_65mND_/view?usp=sharing)*<br/><br/>
+*For detailed description, please refer to <a href="[http://example.com](https://drive.google.com/file/d/1BOljQH3an-HAHsVy-KAy33sVT_65mND_/view?usp=sharing)" target="_blank">Project Report</a>*<br/><br/>
 
 
 
